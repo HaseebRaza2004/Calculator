@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+     
+    }
+  </style>
+</head>
+
+<body class="flex justify-center items-center">
+  <div>
+    <!-- heading -->
+    <h1 class="text-center text-5xl font-bold mt-5">Calculator</h1>
+
+    <!-- calculator -->
+    <div class="w-[350px] h-[450px] border border-2 rounded-md mt-5 border-[#9CA3AF] bg-[#F3F4F6]">
+
+      <!-- display -->
+      <div id="display"
+        class="flex justify-center items-center text-3xl overflow-x-auto border border-2 rounded-md w-[95%] h-[70px] mx-[auto] mt-3 mb-3 border-[#9CA3AF]">
+      </div>
+
+      <!-- buttons -->
+      <div class="grid grid-row-4">
+        <div class="flex justify-center">
+          <button onclick="btn('9')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">9</button>
+          <button onclick="btn('8')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">8</button>
+          <button onclick="btn('7')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">7</button>
+          <button onclick="btn('/')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">/</button>
+        </div>
+        <div class="flex justify-center">
+          <button onclick="btn('6')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF]  ease-in duration-300">6</button>
+          <button onclick="btn('5')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF]  ease-in duration-300">5</button>
+          <button onclick="btn('4')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF]  ease-in duration-300">4</button>
+          <button onclick="btn('x')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF]  ease-in duration-300">x</button>
+        </div>
+        <div class="flex justify-center">
+          <button onclick="btn('3')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">3</button>
+          <button onclick="btn('2')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">2</button>
+          <button onclick="btn('1')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">1</button>
+          <button onclick="btn('+')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">+</button>
+        </div>
+        <div class="flex justify-center">
+          <button onclick="clearAll('C')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">C</button>
+          <button onclick="btn('0')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">0</button>
+          <button onclick="btn('.')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">.</button>
+          <button onclick="isEqualTo('=')"
+            class="w-[60px] h-[60px] border border-2 rounded-full m-3 hover:bg-[#E5E7EB] border-[#9CA3AF] ease-in duration-300">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
